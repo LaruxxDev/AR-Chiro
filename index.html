@@ -10,7 +10,7 @@
 <body>
     <a-scene xr-mode-ui="XRMode: xr;" webxr="optionalFeatures: hit-test, local-floor; referenceSpaceType: local-floor" gesture-detector>
         <a-assets timeout="30000">
-            <a-asset-item id="Chiro" src="Chiro.glb"></a-asset-item>
+            <a-asset-item id="Chiro" src="Chiro.fbx"></a-asset-item>
         </a-assets>
 
         <a-camera position="0 1.6 0"></a-camera>
@@ -18,7 +18,7 @@
         <a-entity
             gltf-model="#Chiro"
             position="0 -0.10 -1"
-            rotation="180 0 0"
+            rotation=" 0 0 0"
             scale="0.25 0.25 0.25"
             gesture-handler="rotationFactor: 1"
             animation-mixer="clip: *; loop: repeat"
