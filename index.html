@@ -8,20 +8,19 @@
     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
 </head>
 <body>
-    <a-scene xr-mode-ui="XRMode: xr;">
+    <a-scene xr-mode-ui="XRMode: xr;" webxr="optionalFeatures: hit-test, local-floor; referenceSpaceType: local-floor" gesture-detector>
         <a-assets timeout="30000">
-            <a-asset-item id="chiro" src="Chiro.glb"></a-asset-item>
+            <a-asset-item id="Chiro" src="Chiro.glb"></a-asset-item>
         </a-assets>
 
         <a-camera position="0 1.6 0"></a-camera>
 
         <a-entity
-            gltf-model="#chiro"
-            position="0 -0.5 -0.5"
+            gltf-model="#Chiro"
+            position="0 -0.10 -1"
             rotation="0 0 0"
-            scale="1 1 1"
-            xr-hit-test
-            animation-mixer
+            scale="0.75 0.75 0.75"
+            gesture-handler="rotationFactor: 1"
         ></a-entity>
     
 </body>
